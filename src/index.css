@@ -18,7 +18,8 @@ html {
     --primary-200: #c1beff;
     --primary-300: #a29dff;
     --primary-400: #837dff;
-    --primary-500: #645cff;
+    --primary-500: goldenrod;
+    /* --primary-500: #645cff; */
     --primary-600: #504acc;
     --primary-700: #3c3799;
     --primary-800: #282566;
@@ -277,6 +278,7 @@ ul {
 
 .title {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .title-underline {
@@ -305,21 +307,25 @@ Toggle Container
     padding: 1rem 0;
     margin: 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: start;
+
+    /* border: 2px solid red; */
 }
 
 .dark-toggle {
     background: transparent;
     border-color: transparent;
     width: 5rem;
-    height: 2rem;
+    height: 4rem;
     display: grid;
     place-items: center;
     cursor: pointer;
+    /* border: 2px solid blue; */
 }
 .toggle-icon {
-    font-size: 1.5rem;
-    color: var(--textColor);
+    font-size: 3.5rem;
+    /* color: var(--textColor); */
+    color: var(--primary-500);
 }
 /*
 ========
@@ -351,7 +357,8 @@ Search Form
     border-radius: 0;
 }
 .search-form .btn:hover {
-    background: var(--primary-300);
+    /* background: var(--primary-300); */
+    background: var(--primary-500);
     color: var(--black);
 }
 
@@ -371,6 +378,7 @@ Gallery
 
 .image-container .img {
     height: 10rem;
+    border-radius: 10px;
 }
 
 @media (min-width: 768px) {

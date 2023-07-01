@@ -3,7 +3,7 @@ import axios from 'axios';
 import React from 'react';
 import { useGlobalContext } from './context';
 
-const url = `https://api.unsplash.com/search/photos?client_id=${
+const url = `https://api.unsplash.com/search/photos?per_page=9&client_id=${
     import.meta.env.VITE_API_KEY
 }`;
 
